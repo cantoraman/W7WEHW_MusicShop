@@ -19,4 +19,14 @@ public abstract class MusicInstrument {
     }
 
 
+
+    public String getBrand() {
+        return brand;
+    }
+    public String getType() {
+        return type;
+    }
+    public String getColor() {
+        return color;
+    }
 }

@@ -10,16 +10,6 @@ public class Trumpet extends MusicInstrument implements ISell, IPlay{
         return valves;
     }
 
-    public String getBrand() {
-        return brand;
-    }
-    public String getType() {
-        return type;
-    }
-    public String getColor() {
-        return color;
-    }
-
 
     @Override
     public double getBuyPrice() {

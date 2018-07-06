@@ -31,4 +31,8 @@ public class DrumStick implements ISell{
     public double calculateMarkup() {
         return (sellPrice-buyPrice);
     }
+
+    public String getBrand() {
+        return brand;
+    }
 }
