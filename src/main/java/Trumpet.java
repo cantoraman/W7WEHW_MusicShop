@@ -35,4 +35,9 @@ public class Trumpet extends MusicInstrument implements ISell{
     public void setSellPrice(double newPrice) {
         sellPrice = newPrice;
     }
+
+    @Override
+    public double calculateMarkup() {
+        return (sellPrice-buyPrice);
+    }
 }

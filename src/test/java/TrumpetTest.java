@@ -44,6 +44,10 @@ public class TrumpetTest {
 
     }
 
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(100, trumpet.calculateMarkup(), 10);
+    }
 
 
 
