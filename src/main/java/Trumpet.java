@@ -1,8 +1,8 @@
-public class Trumpet extends MusicInstrument implements ISell{
+public class Trumpet extends MusicInstrument implements ISell, IPlay{
     private int valves;
 
-    public Trumpet(String brand, String type, String color, double buyPrice, double sellPrice, int valves) {
-        super(brand, type, color, buyPrice, sellPrice);
+    public Trumpet(String brand, String type, String color, String sound, double buyPrice, double sellPrice, int valves) {
+        super(brand, type, color, sound, buyPrice, sellPrice);
         this.valves = valves;
     }
 
@@ -39,5 +39,10 @@ public class Trumpet extends MusicInstrument implements ISell{
     @Override
     public double calculateMarkup() {
         return (sellPrice-buyPrice);
+    }
+
+    @Override
+    public String playSound() {
+        return sound;
     }
 }

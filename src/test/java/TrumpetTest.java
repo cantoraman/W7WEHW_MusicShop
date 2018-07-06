@@ -10,7 +10,7 @@ public class TrumpetTest {
 
     @Before
     public void Setup(){
-        trumpet = new Trumpet("Yamaha", "Brass", "Silver", 100, 200, 3);
+        trumpet = new Trumpet("Yamaha", "Brass", "Silver", "TrumpetSound" ,100, 200, 3);
     }
 
 
@@ -47,6 +47,11 @@ public class TrumpetTest {
     @Test
     public void canCalculateMarkup(){
         assertEquals(100, trumpet.calculateMarkup(), 10);
+    }
+
+    @Test
+    public void canPlaySound(){
+        assertEquals("TrumpetSound", trumpet.playSound());
     }
 
 
