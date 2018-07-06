@@ -18,6 +18,15 @@ public class TrumpetTest {
     public void hasBrand(){
         assertEquals("Yamaha", trumpet.getBrand());
     }
+    @Test
+    public void hasType(){
+        assertEquals("Brass", trumpet.getType());
+    }
+    @Test
+    public void hasColor(){
+        assertEquals("Silver", trumpet.getColor());
+    }
+
 
 
 
