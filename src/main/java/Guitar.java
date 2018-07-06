@@ -9,28 +9,33 @@ public class Guitar extends MusicInstrument implements ISell, IPlay {
 
     }
 
-    @Override
-    public String playSound() {
-        return null;
-    }
 
     @Override
     public double getBuyPrice() {
-        return 0;
+        return buyPrice;
     }
 
     @Override
     public double getSellPrice() {
-        return 0;
+        return sellPrice;
     }
 
     @Override
     public void setSellPrice(double newPrice) {
-
+        sellPrice = newPrice;
     }
 
     @Override
     public double calculateMarkup() {
-        return 0;
+        return (sellPrice-buyPrice);
+    }
+
+    @Override
+    public String playSound() {
+        return sound;
+    }
+
+    public int getStrings() {
+        return stringCount;
     }
 }
