@@ -1,3 +1,5 @@
+package Instruments;
+
 public abstract class MusicInstrument {
 
     protected String brand;

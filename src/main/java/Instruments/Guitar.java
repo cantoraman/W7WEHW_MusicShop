@@ -1,13 +1,14 @@
-public class Trumpet extends MusicInstrument implements ISell, IPlay{
-    private int valves;
+package Instruments;
 
-    public Trumpet(String brand, String type, String color, String sound, double buyPrice, double sellPrice, int valves) {
+public class Guitar extends MusicInstrument implements Interfaces.ISell, Interfaces.IPlay {
+
+
+    private int stringCount;
+    public Guitar(String brand, String type, String color, String sound, double buyPrice, double sellPrice, int stringCount) {
         super(brand, type, color, sound, buyPrice, sellPrice);
-        this.valves = valves;
-    }
 
-    public int getValves() {
-        return valves;
+     this.stringCount = stringCount;
+
     }
 
 
@@ -34,5 +35,9 @@ public class Trumpet extends MusicInstrument implements ISell, IPlay{
     @Override
     public String playSound() {
         return sound;
+    }
+
+    public int getStrings() {
+        return stringCount;
     }
 }
