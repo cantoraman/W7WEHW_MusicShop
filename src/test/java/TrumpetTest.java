@@ -27,6 +27,22 @@ public class TrumpetTest {
         assertEquals("Silver", trumpet.getColor());
     }
 
+    @Test
+    public void hasBuyPrice(){
+        assertEquals(100, trumpet.getBuyPrice(), 0);
+    }
+
+    @Test
+    public void hasSellPrice(){
+        assertEquals(200, trumpet.getSellPrice(), 0);
+    }
+
+    @Test
+    public void canChangeSellPrice(){
+        trumpet.setSellPrice(300);
+        assertEquals(300, trumpet.getSellPrice(), 0);
+
+    }
 
 
 
